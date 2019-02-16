@@ -3,10 +3,7 @@ var socket = io();
 socket.on('connect',function(){
     console.log('Connected to a server');
 
-    socket.emit('createMessage',{
-       from:'vinnyvinny',
-       text:'victory belongs to Jesus'
-    });
+   
 
 });
 socket.on('disconnect',function(){
