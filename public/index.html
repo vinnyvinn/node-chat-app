@@ -6,5 +6,21 @@
 </head>
 <body>
 	<p>Welcome to Chat App</p>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io();
+
+		socket.on('connect',(server) => {
+			console.log('Connected to a server');
+
+
+		 });
+		socket.on('disconnect',(server) => {
+			console.log('Disconnected from the server');
+		});
+
+	</script>
+	
 </body>
 </html>
