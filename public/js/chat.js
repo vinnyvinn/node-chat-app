@@ -32,7 +32,6 @@ socket.on('disconnect',function(){
 });
 
 
-
 socket.on('updateUserList',(users) =>{
    var ol = $('<ol></ol>');
 
